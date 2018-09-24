@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  'use strict'
   $('.tooltip-right').tooltip({
     placement: 'right',
     viewport: {selector: 'body', padding: 2}

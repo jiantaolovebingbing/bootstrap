@@ -8,7 +8,7 @@
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // CSS TRANSITION SUPPORT (Shoutout: https://modernizr.com/)
   // ============================================================
@@ -56,4 +56,4 @@
     }
   })
 
-}(jQuery);
+}(jQuery)

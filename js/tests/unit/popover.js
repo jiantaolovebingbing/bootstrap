@@ -1,5 +1,5 @@
 $(function () {
-  'use strict';
+  'use strict'
 
   QUnit.module('popover plugin')
 
@@ -242,10 +242,10 @@ $(function () {
 
       $div.find('a').trigger('click')
     })
-    .one('hidden.bs.popover', function () {
-      assert.strictEqual($('.popover').length, 0, 'popover was removed')
-      done()
-    })
+      .one('hidden.bs.popover', function () {
+        assert.strictEqual($('.popover').length, 0, 'popover was removed')
+        done()
+      })
     $div.find('a').trigger('click')
   })
 

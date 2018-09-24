@@ -8,7 +8,7 @@
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // CAROUSEL CLASS DEFINITION
   // =========================
@@ -243,4 +243,4 @@
     })
   })
 
-}(jQuery);
+}(jQuery)

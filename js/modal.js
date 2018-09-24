@@ -8,7 +8,7 @@
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // MODAL CLASS DEFINITION
   // ======================
@@ -339,4 +339,4 @@
     Plugin.call($target, option, this)
   })
 
-}(jQuery);
+}(jQuery)

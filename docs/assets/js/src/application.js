@@ -12,7 +12,7 @@
 /* global ClipboardJS: false, anchors: false */
 
 !function ($) {
-  'use strict';
+  'use strict'
 
   $(function () {
 
@@ -81,7 +81,7 @@
           localStorage.removeItem('previewTheme')
         }
       })
-    })();
+    })()
 
     // Tooltip and popover demos
     $('.tooltip-demo').tooltip({
@@ -173,8 +173,8 @@
 }(jQuery)
 
 ;(function () {
-  'use strict';
+  'use strict'
 
-  anchors.options.placement = 'left';
+  anchors.options.placement = 'left'
   anchors.add('.bs-docs-section > h1, .bs-docs-section > h2, .bs-docs-section > h3, .bs-docs-section > h4, .bs-docs-section > h5')
-})();
+})()

@@ -8,7 +8,7 @@
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // AFFIX CLASS DEFINITION
   // ======================
@@ -161,4 +161,4 @@
     })
   })
 
-}(jQuery);
+}(jQuery)

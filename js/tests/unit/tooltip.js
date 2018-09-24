@@ -1,5 +1,5 @@
 $(function () {
-  'use strict';
+  'use strict'
 
   QUnit.module('tooltip plugin')
 
@@ -88,11 +88,11 @@ $(function () {
       assert.ok($trigger[0].hasAttribute('aria-describedby'), 'trigger has aria-describedby')
       $trigger.bootstrapTooltip('hide')
     })
-    .one('hidden.bs.tooltip', function () {
-      assert.ok(!$trigger[0].hasAttribute('aria-describedby'), 'trigger does not have aria-describedby')
-      done()
-    })
-    .bootstrapTooltip('show')
+      .one('hidden.bs.tooltip', function () {
+        assert.ok(!$trigger[0].hasAttribute('aria-describedby'), 'trigger does not have aria-describedby')
+        done()
+      })
+      .bootstrapTooltip('show')
   })
 
   QUnit.test('should assign a unique id tooltip element', function (assert) {
@@ -142,11 +142,11 @@ $(function () {
       assert.notEqual($('.tooltip b').length, 0, 'b tag was inserted')
       $tooltip.bootstrapTooltip('hide')
     })
-    .one('hidden.bs.tooltip', function () {
-      assert.strictEqual($('.tooltip').length, 0, 'tooltip removed')
-      done()
-    })
-    .bootstrapTooltip('show')
+      .one('hidden.bs.tooltip', function () {
+        assert.strictEqual($('.tooltip').length, 0, 'tooltip removed')
+        done()
+      })
+      .bootstrapTooltip('show')
   })
 
   QUnit.test('should respect custom classes', function (assert) {
@@ -161,11 +161,11 @@ $(function () {
       assert.ok($('.tooltip').hasClass('some-class'), 'custom class is present')
       $tooltip.bootstrapTooltip('hide')
     })
-    .one('hidden.bs.tooltip', function () {
-      assert.strictEqual($('.tooltip').length, 0, 'tooltip removed')
-      done()
-    })
-    .bootstrapTooltip('show')
+      .one('hidden.bs.tooltip', function () {
+        assert.strictEqual($('.tooltip').length, 0, 'tooltip removed')
+        done()
+      })
+      .bootstrapTooltip('show')
   })
 
   QUnit.test('should fire show event', function (assert) {
@@ -309,10 +309,10 @@ $(function () {
       assert.ok($('.tooltip').is('.fade.in'), 'tooltip is faded in')
       $div.find('a').trigger('click')
     })
-    .one('hidden.bs.tooltip', function () {
-      assert.strictEqual($('.tooltip').length, 0, 'tooltip was removed from dom')
-      done()
-    })
+      .one('hidden.bs.tooltip', function () {
+        assert.strictEqual($('.tooltip').length, 0, 'tooltip was removed from dom')
+        done()
+      })
 
     $div.find('a').trigger('click')
   })
@@ -495,8 +495,8 @@ $(function () {
 
     function rightTooltip() {
       var $rightTooltip = $('<div style="right: 0;" rel="tooltip" title="Right tooltip">Right Dynamic Tooltip</div>')
-      .appendTo($container)
-      .bootstrapTooltip({ placement: 'right auto', viewport: '#qunit-fixture' })
+        .appendTo($container)
+        .bootstrapTooltip({ placement: 'right auto', viewport: '#qunit-fixture' })
 
       $rightTooltip
         .one('shown.bs.tooltip', function () {

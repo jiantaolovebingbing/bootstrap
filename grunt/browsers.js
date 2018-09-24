@@ -78,9 +78,9 @@ var browsers = {
     device: 'Google Nexus 5',
     real_mobile: true
   }
-};
+}
 
 module.exports = {
   list: browsers,
   keys: Object.keys(browsers)
-};
+}

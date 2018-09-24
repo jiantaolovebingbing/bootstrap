@@ -8,7 +8,7 @@
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // BUTTON PUBLIC CLASS DEFINITION
   // ==============================
@@ -122,4 +122,4 @@
       $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
     })
 
-}(jQuery);
+}(jQuery)

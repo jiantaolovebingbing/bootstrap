@@ -9,7 +9,7 @@
 /* global JSON, JSZip, less, autoprefixer, saveAs, UglifyJS, __configBridge, __js, __less, __fonts */
 
 window.onload = function () { // wait for load in a dumb way because B-0
-  'use strict';
+  'use strict'
 
   var cw = '/*!\n' +
            ' * Bootstrap v3.4.0 (http://getbootstrap.com)\n' +
@@ -90,13 +90,13 @@ window.onload = function () { // wait for load in a dumb way because B-0
       type: 'GET',
       dataType: 'json'
     })
-    .success(function (result) {
-      var data = JSON.parse(result.files['config.json'].content)
-      updateCustomizerFromJson(data)
-    })
-    .error(function (err) {
-      showError('Error fetching bootstrap config file', err)
-    })
+      .success(function (result) {
+        var data = JSON.parse(result.files['config.json'].content)
+        updateCustomizerFromJson(data)
+      })
+      .error(function (err) {
+        showError('Error fetching bootstrap config file', err)
+      })
   }
 
   function generateZip(css, js, fonts, config, complete) {
@@ -424,7 +424,7 @@ window.onload = function () { // wait for load in a dumb way because B-0
     }
 
     generate()
-  });
+  })
 
   parseUrl()
 }
